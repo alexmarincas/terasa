@@ -5,11 +5,11 @@
     "index.html": "/terasa-preview/index.html",
     "main.30c3c8a4.css.map": "/terasa-preview/static/css/main.30c3c8a4.css.map",
     "main.ac82cca2.js.map": "/terasa-preview/static/js/main.ac82cca2.js.map",
-    "terasa_merge.glb": "/terasa-preview/static/terasa_merge.glb",
+    "terasa_merge.glb": "/terasa-preview/static/terasa_merge.glb"
   },
   "entrypoints": [
     "static/css/main.30c3c8a4.css",
     "static/js/main.ac82cca2.js",
-    "static/terasa_merge.glb",
+    "static/terasa_merge.glb"
   ]
 }
