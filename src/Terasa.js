@@ -8,7 +8,7 @@ import { useGLTF } from "@react-three/drei";
 import { useControls } from 'leva'
 
 export default function Terasa(props) {
-  const { nodes, materials } = useGLTF("/terasa_merge.glb");
+  const { nodes, materials } = useGLTF("/static/terasa_merge.glb");
 
   const dusumea = useControls('Dusumea', {visible: true, opacity: {value: 1,min: 0,max: 1,step: 0.05} })
   const treapta = useControls('Treapta', {visible: true, opacity: {value: 1,min: 0,max: 1,step: 0.05} })
@@ -85,4 +85,4 @@ export default function Terasa(props) {
   );
 }
 
-useGLTF.preload("/terasa_merge.glb");
+useGLTF.preload("/static/terasa_merge.glb");
