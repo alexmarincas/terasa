@@ -8,19 +8,17 @@ import { useGLTF } from "@react-three/drei";
 import { useControls } from 'leva'
 
 export default function Terasa(props) {
-  const { nodes, materials } = useGLTF("/static/terasa_merge.glb");
+  const { nodes, materials } = useGLTF("/terasa-preview/terasa_merge.glb");
 
-  const dusumea = useControls('Dusumea', {visible: true, opacity: {value: 1,min: 0,max: 1,step: 0.05} })
-  const treapta = useControls('Treapta', {visible: true, opacity: {value: 1,min: 0,max: 1,step: 0.05} })
-  const scara = useControls('Structura metalica scara', {visible: true, opacity: {value: 1,min: 0,max: 1,step: 0.05} })
-  const profil60 = useControls('Structura metalica 60x40', {visible: true, opacity: {value: 1,min: 0,max: 1,step: 0.05} })
-  const profilI = useControls('Structura metalica profil I', {visible: true, opacity: {value: 1,min: 0,max: 1,step: 0.05} })
-  const manaCurenta = useControls('Mana curenta - platbanda 35x10', {visible: true, opacity: {value: 1,min: 0,max: 1,step: 0.05} })
-  const stinghii = useControls('Stinghii - Fi12', {visible: true, opacity: {value: 1,min: 0,max: 1,step: 0.05} })
-  const montanti = useControls('Montanti - profil T35', {visible: true, opacity: {value: 1,min: 0,max: 1,step: 0.05} })
-  const traverse = useControls('Traverse + stalpi', {visible: true, opacity: {value: 1,min: 0,max: 1,step: 0.05} })
-
-  console.log(materials)
+  const dusumea = useControls('Dusumea', {visible: true, opacity: {value: 1,min: 0.5,max: 1,step: 0.05} })
+  const treapta = useControls('Trepte', {visible: true, opacity: {value: 1,min: 0.5,max: 1,step: 0.05} })
+  const scara = useControls('Structura metalica scara', {visible: true, opacity: {value: 1,min: 0.5,max: 1,step: 0.05} })
+  const profil60 = useControls('Structura metalica 60x40', {visible: true, opacity: {value: 1,min: 0.5,max: 1,step: 0.05} })
+  const profilI = useControls('Structura metalica profil I', {visible: true, opacity: {value: 1,min: 0.5,max: 1,step: 0.05} })
+  const manaCurenta = useControls('Mana curenta - platbanda 35x10', {visible: true, opacity: {value: 1,min: 0.5,max: 1,step: 0.05} })
+  const stinghii = useControls('Stinghii - Fi12', {visible: true, opacity: {value: 1,min: 0.5,max: 1,step: 0.05} })
+  const montanti = useControls('Montanti - profil T35', {visible: true, opacity: {value: 1,min: 0.5,max: 1,step: 0.05} })
+  const traverse = useControls('Traverse + stalpi', {visible: true, opacity: {value: 1,min: 0.5,max: 1,step: 0.05} })
 
   return (
     <group {...props} dispose={null}>
@@ -85,4 +83,4 @@ export default function Terasa(props) {
   );
 }
 
-useGLTF.preload("/static/terasa_merge.glb");
+useGLTF.preload("/terasa-preview/terasa_merge.glb");
